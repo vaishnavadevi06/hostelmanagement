@@ -1,13 +1,11 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-
-/// Initialize the environment (load .env file)
 void initializeEnv() {
   dotenv.load();
 }
 
-/// Send an SMS via Twilio using environment variables
+
 Future<void> sendSMS({
   required String name,
   required String phone,
