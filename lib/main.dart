@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart'; // make sure this import exists
+import 'firebase_options.dart'; 
 import 'loginscreen.dart';
 
 void main() async {
@@ -9,7 +9,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const HostelApp()); // <-- THIS WAS MISSING
+  runApp(const HostelApp()); 
 }
 
 class HostelApp extends StatelessWidget {
